@@ -1,5 +1,2 @@
-asyncio
-os
-datetime
-threading
-http.server
+aiogram
+python-dotenv
