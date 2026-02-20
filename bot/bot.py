@@ -6,8 +6,11 @@ from aiogram.filters import Command
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.storage.memory import MemoryStorage
+from dotenv import load_dotenv
 
-TOKEN = "8254934023:AAGgxupNEJjpQ5rcGx3vVPbqYuRVfjWWWiY"
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
+
 API_URL = "http://127.0.0.1:8000"
 
 bot = Bot(TOKEN)
